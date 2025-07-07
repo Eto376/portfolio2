@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  background: #1e293b;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  animation: fadeIn 1s ease-in-out;
+  width: 80vw;
+  height: 100vh;
+  justify-content: center;
+}
+
+.profile-pic img {
+  width: 250px;
+  border-radius: 50%;
+  box-shadow: 0 0 30px #3b82f6;
+  animation: glow 2s infinite alternate;
+}
+.profile-pic{
+  height: 36vh;
+}
+
+.info {
+  margin-left: 40px;
+}
+
+.info h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.info h1 span {
+  color: #3b82f6;
+}
+
+.info h2 {
+  font-size: 24px;
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+.info p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.buttons .btn {
+  padding: 10px 20px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-right: 10px;
+  text-decoration: none;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.buttons .btn:hover {
+  transform: scale(1.05);
+  background: #2563eb;
+}
+
+.btn.outline {
+  background: transparent;
+  border: 2px solid #3b82f6;
+}
+
+.btn.outline:hover {
+  background: #3b82f6;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 15px #3b82f6;
+  }
+  to {
+    box-shadow: 0 0 40px #3b82f6;
+  }
+}
+
+
