@@ -1,42 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio</title>
   <link rel="stylesheet" href="portfolio.css" />
 </head>
+
 <body>
   <div class="container">
-    <div class="profile-pic">
-      <img src="username.jfif" alt="My Photo" />
-    </div>
-    <div class="info">
-      <h1>Hello, I'm <span>Enkhtuguldur</span></h1>
-      <h2>I'm a Front-end developer</h2>
-      <br><br>
-      <div class="buttons">
-        <a href="#" class="btn">Hire Me</a>
-        <a href="#" class="btn outline">My skills</a>
-         <a href="#" class="btn outline">My Projects</a>
-          <a href="#" class="btn outline">Contact Me</a>
-          <br><br><br><br>
+    <div class="ded">
+      <div class="profile-pic">
+        <img src="username.jfif" alt="My Photo" />
       </div>
-      <div class="skills">
-      <ul><h3>My skills</h3>
-        <li>HTML </li>
-        <li>CSS</li>
-        <li>JAVASCRIPS</li>
-      </ul>
+      <div class="info">
+        <div class="info2">
+          <h1>Hello, I'm <span>Enkhtuguldur</span></h1>
+          <h2>I'm a Front-end developer</h2>
+          <br><br>
+          <div class="buttons">
+            <a href="#" class="btn">Hire Me</a>
+            <a href="#About" class="btn outline">About</a>
+            <a href="#skills" class="btn outline">My skills</a>
+            <a href="#projects" class="btn outline">My Projects</a>
+            <a href="#" class="btn outline">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="about" id="about">
+          <div class="about-card">
+            <h2>About</h2>
+            <p>Hey, I'm Enkhtuguldur. They call me ETO. I'm nineteen years old.</p>
+            <p>I've been coding for a month now.</p>
+            <p>My hobbies are playing basketball, table tennis, pool, and CS2.</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="projects">
-        <ul><h3>My projects</h3>
-            <li>CALCULATOR</li>
-            <li>GAME </li>
-            <li> WEATHER SITE</li>
-        </ul>
-    </div>
+
+    <div class="skills" id="skills">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <div class="skill">
+          <h3>HTML</h3>
+          <div class="bar">
+            <div class="progress" style="width: 50%;">50%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3>CSS</h3>
+          <div class="bar">
+            <div class="progress" style="width: 60%;">60%</div>
+          </div>
+        </div>
+        <!-- <div class="skill">
+            <h3>JavaScript</h3>
+            <div class="bar">
+              <div class="progress" style="width: 70%;">70%</div>
+            </div>
+          </div> -->
+      </div>
     </div>
   </div>
 </body>
+
 </html>
